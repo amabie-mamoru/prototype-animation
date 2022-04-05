@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 public class DebugUI : MonoBehaviour
 {
     [SerializeField] private UIDocument uiDocument;
-    [SerializeField] private Canvas uiCanvas;
+    [SerializeField] private Canvas spriteCanvas;
 
     private void Awake()
     {
@@ -21,8 +21,8 @@ public class DebugUI : MonoBehaviour
         //var spriteRenderer = gameObj.AddComponent<SpriteRenderer>();
         //spriteRenderer.sprite = mark;
         var mark = gameObj.GetComponent<SpriteRenderer>();
-        gameObj.transform.localScale = new Vector3(1, 1, 1);
+        gameObj.transform.localScale = new Vector3(10, 10, 1); // TODO: localScale はたぶん UI の解像度に合わせて変更する処理が必要
         gameObj.transform.position = new Vector3(gameObj.transform.position.x - mark.bounds.size.x / 2, gameObj.transform.position.y + mark.bounds.size.y / 2, 0);
-        gameObj.transform.SetParent(uiCanvas.transform);
+        gameObj.transform.SetParent(spriteCanvas.transform);
     }
 }
