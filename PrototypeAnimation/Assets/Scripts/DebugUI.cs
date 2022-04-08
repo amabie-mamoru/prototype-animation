@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 public class DebugUI : MonoBehaviour
 {
     [SerializeField] private UIDocument uiDocument;
-    // Canvas を直接参照すると Camera - Overlay の場合 Anchor が左下固定のため
+    // Canvas を直接参照すると Screen Space - Overlay の場合 Anchor が左下固定のため
     // 追加するオブジェクトも全てアンカーを左下にしないといけなくなる
     // それをあえて避けるために Canvas アンカーを左下とする Root となる GameObject を定義することで
     // 追加される GameObject の Anchor をデフォルト(中央)で定義しやすくするための工夫

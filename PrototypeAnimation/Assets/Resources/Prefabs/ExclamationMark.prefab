@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3230853681833000267}
   - component: {fileID: 3230853681833000264}
   - component: {fileID: 2967373287633087047}
+  - component: {fileID: 1735621069451044178}
   m_Layer: 6
   m_Name: ExclamationMark
   m_TagString: Untagged
@@ -37,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 1, y: 1}
 --- !u!212 &3230853681833000267
 SpriteRenderer:
@@ -123,3 +124,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda8176c8850a46f5a17656d686a2067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1735621069451044178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230853681833000270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 21dc3be917d0f4c57827c8fea839f7a3, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
